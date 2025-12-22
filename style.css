@@ -1,4 +1,4 @@
-/* --- 1. VARIABLES ET CHARTE GRAPHIQUE --- [1] */
+/* --- 1. VARIABLES ET CHARTE GRAPHIQUE --- */
 :root {
     --orange-main: #FF7900;
     --black: #000000;
@@ -9,22 +9,22 @@
 }
 
 html, body {
-    height: 100%;
-    margin: 0;
+    height: 100%; 
+    margin: 0; 
     font-family: 'Segoe UI', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--light-bg);
+    display: flex; 
+    flex-direction: column; 
+    background-color: var(--light-bg); 
     color: var(--black);
 }
 
-/* --- 2. HEADER (Version PC) --- [1, 2] */
+/* --- 2. HEADER (Version PC) --- */
 .portfolio-header {
-    display: flex;
-    justify-content: space-between;
+    display: flex; 
+    justify-content: space-between; 
     align-items: center;
-    padding: 10px 3%;
-    background-color: var(--black);
+    padding: 10px 3%; 
+    background-color: var(--black); 
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
@@ -37,7 +37,7 @@ html, body {
 .header-right { display: flex; justify-content: flex-end; width: 30%; }
 .header-right img { height: 50px; width: auto; }
 
-/* --- 3. NAVIGATION (Version PC) --- [3] */
+/* --- 3. NAVIGATION (Version PC) --- */
 .nav-menu { background-color: var(--dark-grey); border-top: 1px solid #444; }
 .nav-menu ul { 
     list-style: none; 
@@ -57,9 +57,9 @@ html, body {
 }
 .nav-menu a:hover { color: var(--orange-main); }
 
-/* --- 4. STRUCTURE ET SECTIONS --- [4] */
+/* --- 4. STRUCTURE ET SECTIONS --- */
 .container { 
-    max-width: 1200px; 
+    max-width: 1100px; 
     margin: 30px auto; 
     padding: 0 20px; 
     flex: 1; 
@@ -76,7 +76,7 @@ section {
 h2 { border-bottom: 3px solid var(--orange-main); padding-bottom: 10px; margin-top: 0; }
 h3 { color: var(--orange-main); }
 
-/* --- 5. INDEX : COMPÉTENCES ET PARCOURS --- [4-6] */
+/* --- 5. INDEX : COMPÉTENCES ET PARCOURS --- */
 .index-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 30px; }
 
 .skill-card {
@@ -121,7 +121,7 @@ h3 { color: var(--orange-main); }
     text-align: center;
 }
 
-/* --- 6. MISSIONS : GRILLE ET DÉTAILS --- [531, 532, History] */
+/* --- 6. MISSIONS : GRILLE ET DÉTAILS --- */
 .mission-grid { 
     display: flex; 
     justify-content: flex-start; 
@@ -150,26 +150,12 @@ h3 { color: var(--orange-main); }
 
 .mission-card:hover { transform: scale(1.05); background-color: #fff9f4; color: var(--orange-main); }
 
-/* --- CLASSES DE MISE EN PAGE MISSION & ENTREPRISE --- [532, History] */
+/* --- CLASSES D'ALIGNEMENT POUR ENTREPRISE.HTML --- */
 .mission-details-grid { 
     display: grid; 
-    grid-template-columns: 2.5fr 1fr; /* Contenu large à gauche, sidebar à droite */
+    grid-template-columns: 2fr 1fr; 
     gap: 30px; 
-    align-items: start; 
-}
-
-/* Grille spécifique pour les 4 images de Mission 1 */
-.image-mission-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin: 20px 0;
-}
-.image-mission-grid img { 
-    width: 50%; 
-    height: 100%; 
-    border-radius: 10px; 
-    box-shadow: var(--shadow); 
+    align-items: center; /* Centre verticalement le texte par rapport à l'image */
 }
 
 .img-container-center { text-align: center; margin-top: 20px; }
@@ -187,18 +173,7 @@ h3 { color: var(--orange-main); }
 }
 .nav-badge-link:hover { background-color: var(--orange-main); }
 
-/* Sidebar compétences à droite [533, History] */
-.ac-sidebar { 
-    background: var(--dark-grey); 
-    color: var(--white); 
-    padding: 20px; 
-    border-radius: 12px; 
-    height: fit-content; 
-    position: sticky; 
-    top: 20px;
-}
-.ac-sidebar h3 { color: var(--orange-main); margin-top: 0; }
-
+.ac-sidebar { background: var(--dark-grey); color: var(--white); padding: 20px; border-radius: 12px; height: fit-content; }
 .trace-box { 
     background: #fff9f4; 
     border: 1px dashed var(--orange-main); 
@@ -208,7 +183,7 @@ h3 { color: var(--orange-main); }
     font-style: italic; 
 }
 
-/* --- 7. FOOTER --- [9, 10] */
+/* --- 7. FOOTER --- */
 .portfolio-footer {
     background-color: var(--black); 
     color: var(--white); 
@@ -224,8 +199,8 @@ h3 { color: var(--orange-main); }
 .footer-top { display: flex; justify-content: center; align-items: center; gap: 10px; }
 .portfolio-footer span { color: var(--orange-main); font-weight: bold; }
 
-/* --- 8. CONFIGURATION MOBILE (TÉLÉPHONE & TABLETTE) --- [10-12] */
-@media (max-width: 992px) {
+/* --- 8. CONFIGURATION MOBILE (TÉLÉPHONE & TABLETTE) --- */
+@media (max-width: 768px) {
     .header-left { flex-direction: column; gap: 10px; width: 20%; align-items: center; }
     .header-left img { height: 30px; }
     .header-center { width: 60%; }
@@ -236,24 +211,17 @@ h3 { color: var(--orange-main); }
     .nav-menu ul { flex-direction: row; justify-content: space-around; gap: 5px; padding: 15px 5px; }
     .nav-menu a { font-size: 0.7em; }
 
-    /* Empilement vertical des colonnes sur mobile */
+    /* Centrage et alignement des blocs techniques sur mobile */
     .index-grid, .mission-details-grid, .mission-grid { 
         display: flex; 
         flex-direction: column; 
         align-items: center; 
     }
 
-    /* La sidebar passe au-dessus ou en-dessous selon l'ordre souhaité */
-    .ac-sidebar { order: -1; position: static; width: 90%; margin-bottom: 20px; }
-    
-    /* Grille d'images passe sur une seule colonne sur petit écran */
-    .image-mission-grid { grid-template-columns: 1fr; width: 100%; }
-
-    /* Alignement uniforme des badges techniques */
-    .mission-grid .nav-badge-link, .date-badge {
+    /* Force les badges à avoir la même largeur pour être bien alignés */
+    .mission-grid .nav-badge-link {
         width: 80%; 
         max-width: 300px;
-        margin: 5px 0;
     }
 
     .mission-card { width: 90%; height: 100px; }
