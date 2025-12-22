@@ -167,7 +167,7 @@ h3 { color: var(--orange-main); }
 }
 .image-mission-grid img { 
     width: 50%; 
-    height: auto; 
+    height: 100%; 
     border-radius: 10px; 
     box-shadow: var(--shadow); 
 }
