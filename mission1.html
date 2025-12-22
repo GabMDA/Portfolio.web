@@ -34,72 +34,109 @@
     </nav>
 
     <main class="container">
-        <!-- GRILLE MISSION : 2fr (Contenu) / 1fr (Sidebar) -->
-        <div class="mission-details-grid">
+        <!-- GRILLE MISSION : 2.5fr (Contenu) / 1fr (Sidebar) -->
+        <div class="mission-layout-grid">
             
             <!-- COLONNE GAUCHE : DESCRIPTION TECHNIQUE -->
-            <article class="content-card">
+            <article class="mission-content">
                 <h2>Intervention Orange Connect Pro</h2>
-                <p><strong>Rôle :</strong> Technicien d'intervention (Alternant) | <strong>Lieu :</strong> Secteur de Flers .</p>
+                <p><strong>Rôle :</strong> Technicien d'intervention (Alternant) | <strong>Lieu :</strong> Secteur de Flers</p>
 
-                <section>
-                    <h3>1. Phase de Diagnostic et Préparation (Audit)</h3>
+                <section class="mission-section">
+                    <h3>Contexte et Objectifs</h3>
+                    <p>Orange Connect Pro est une offre professionnelle complète destinée aux TPE/PME, combinant connexion internet haut débit, téléphonie IP (ToIP) et solution de secours 4G/5G. Mon rôle consiste à migrer les clients depuis leurs anciennes installations vers cette solution moderne tout en garantissant la continuité de service.</p>
+                    <p><strong>Objectifs :</strong></p>
+                    <ul>
+                        <li>Assurer une migration sans interruption de service prolongée</li>
+                        <li>Configurer et tester l'ensemble des équipements (Livebox 7 Pro, Airbox, postes DECT)</li>
+                        <li>Former le client à l'utilisation des nouveaux équipements</li>
+                    </ul>
+                </section>
+
+                <section class="mission-section">
+                    <h3>Tâches Réalisées</h3>
+                    
+                    <h4>1. Phase de Diagnostic et Préparation</h4>
                     <p>Avant toute intervention, je réalise un audit complet pour garantir une migration sans perte de service :</p>
                     <ul>
-                        <li><strong>Vérification SVI :</strong> Test de l'accueil et des messages via la plateforme <em>ATS Studio</em>.</li>
-                        <li><strong>Sauvegarde :</strong> Récupération de la configuration de l'ancienne box pour assurer la continuité des paramètres réseau.</li>
-                        <li><strong>Accord client :</strong> Information et obtention de l'accord formel avant toute coupure.</li>
+                        <li><strong>Vérification SVI :</strong> Test de l'accueil téléphonique et des messages via la plateforme ATS Studio</li>
+                        <li><strong>Sauvegarde configuration :</strong> Récupération des paramètres réseau de l'ancienne box (DHCP, redirections de ports, Wi-Fi)</li>
+                        <li><strong>Validation client :</strong> Information sur les étapes et obtention de l'accord formel avant coupure</li>
                     </ul>
-                </section>
 
-                <section>
-                    <h3>2. Déploiement Matériel, Migration et Téléphonie IP</h3>
-                    <p>Cette phase regroupe l'installation de l'infrastructure internet et la mise en service des solutions de communication  :</p>
+                    <h4>2. Déploiement Matériel et Configuration</h4>
                     <ul>
-                        <li><strong>Installation physique :</strong> Mise sous tension de la nouvelle box et activation de l'<strong>Airbox de secours (4G/5G)</strong>.</li>
-                        <li><strong>Configuration Téléphonique :</strong> Paramétrage de la ligne via l'interface d'administration Web, installation du poste fixe et <strong>appairage DECT</strong> des combinés sans fil.</li>
-                        <li><strong>Activation MOBI :</strong> Finalisation technique et administrative de l'ordre de travail via l'application métier.</li>
+                        <li><strong>Installation physique :</strong> Remplacement de l'ancienne box, raccordement de la Livebox 7 Pro et de l'Airbox de secours 4G/5G</li>
+                        <li><strong>Configuration réseau :</strong> Restauration des paramètres sauvegardés, activation du mode professionnel via l'interface Web</li>
+                        <li><strong>Téléphonie IP :</strong> Paramétrage de la ligne SIP, installation du poste fixe et appairage DECT des combinés sans fil</li>
+                        <li><strong>Tests fonctionnels :</strong> Vérification des appels entrants/sortants, du SVI, de la connexion internet et du basculement sur l'Airbox</li>
+                        <li><strong>Clôture administrative :</strong> Validation de l'intervention via l'application MOBI</li>
                     </ul>
-                </section>
 
-                <section>
-                    <h3>3. Gestion des Incidents (Retours d'expérience)</h3>
-                    <p>Durant mes interventions, je gère les anomalies complexes en lien avec les supports experts :</p>
+                    <h4>3. Gestion d'Incidents Techniques</h4>
+                    <p>Durant mes interventions, j'ai été confronté à des anomalies nécessitant une analyse approfondie :</p>
                     <ul>
-                        <li><strong>Forçage de profil :</strong> Correction des box non configurées en "Mode Pro" via une sollicitation du service Connect Pro à distance.</li>
-                        <li><strong>Erreur d'adressage MAC :</strong> Résolution des échecs d'appairage ToIP causés par une inversion des adresses MAC entre la borne et les combinés.</li>
+                        <li><strong>Forçage de profil Pro :</strong> Sur certaines box mal provisionnées, le mode professionnel n'était pas activé automatiquement. J'ai dû contacter le service Connect Pro pour forcer le profil à distance</li>
+                        <li><strong>Erreur d'appairage DECT :</strong> Échec de l'association entre la borne et les combinés causé par une inversion des adresses MAC dans le système. Résolution par correction de la base de données avec le support technique</li>
                     </ul>
                 </section>
 
-                <section>
+                <section class="mission-section">
                     <h3>Analyse Réflexive</h3>
-                    <p>Cette mission m'a permis de développer une plus grande <strong>autonomie</strong> dans la gestion de projets clients . J'ai appris à identifier les dysfonctionnements critiques (erreurs MAC) et à adapter ma communication pour rassurer le client lors des phases de coupure ou d'incident .</p>
+                    <p>Cette mission m'a permis de développer une plus grande <strong>autonomie technique et relationnelle</strong>. Sur le plan technique, j'ai appris à diagnostiquer rapidement les dysfonctionnements (erreurs de provisionnement, problèmes MAC) et à utiliser efficacement les outils métier (MOBI, ATS Studio, interfaces d'administration).</p>
+                    <p>Sur le plan relationnel, j'ai amélioré ma capacité à communiquer avec différents interlocuteurs : rassurer le client pendant les coupures, expliquer les procédures de manière pédagogique, et collaborer efficacement avec les supports techniques distants.</p>
+                    <p><strong>Points d'amélioration identifiés :</strong> Mieux anticiper les temps d'intervention en intégrant systématiquement une marge pour les incidents imprévus, et renforcer ma documentation des configurations pour faciliter les interventions futures.</p>
                 </section>
 
-                <section>
+                <section class="mission-section">
                     <h3>Traces et Preuves</h3>
                     <div class="trace-box">
-                        <p><strong>Preuves :</strong> Capture d'écran de validation MOBI, Photos de l'installation DECT, Fiches d'intervention résolues .</p>
+                        <p><strong>Preuves techniques disponibles :</strong></p>
+                        <ul>
+                            <li>Captures d'écran de validation MOBI (ordre de travail clôturé)</li>
+                            <li>Photos de l'installation physique (Livebox 7, Airbox, postes DECT)</li>
+                            <li>Fiches d'intervention avec détail des incidents résolus</li>
+                            <li>Capture de l'interface d'administration montrant la configuration réseau</li>
+                        </ul>
+                        <img src="mobi_validation.png" alt="Validation MOBI Connect Pro" class="tech-img">
                     </div>
                 </section>
             </article>
 
             <!-- COLONNE DROITE : COMPÉTENCES ET AC -->
-            <aside class="ac-sidebar">
-                <h3>Compétences mobilisées</h3>
-                <ul>
-                    <li><strong>RT1 :</strong> Administrer les réseaux .</li>
-                    <li><strong>RT2 :</strong> Connecter les usagers .</li>
-                </ul>
+            <aside class="mission-sidebar">
+                <div class="sidebar-block">
+                    <h3>Compétences BUT R&T</h3>
+                    <ul>
+                        <li><strong>RT1 :</strong> Administrer les réseaux et l'internet</li>
+                        <li><strong>RT2 :</strong> Connecter les entreprises et les usagers</li>
+                    </ul>
+                </div>
                 
-                <h3>Apprentissages Critiques (AC)</h3>
-                <ul>
-                    <li><strong>AC11.03 :</strong> Configurer les fonctions de base du réseau local .</li>
-                    <li><strong>AC11.05 :</strong> Identifier les dysfonctionnements et les signaler .</li>
-                    <li><strong>AC12.04 :</strong> Connecter les systèmes de ToIP .</li>
-                    <li><strong>AC12.05 :</strong> Communiquer avec un tiers (Support technique Orange) .</li>
-                    <li><strong>AC22.02 :</strong> Mettre en place un accès distant sécurisé (via Airbox) .</li>
-                </ul>
+                <div class="sidebar-block">
+                    <h3>Apprentissages Critiques</h3>
+                    <ul>
+                        <li><strong>AC11.03 :</strong> Configurer les fonctions de base du réseau local</li>
+                        <li><strong>AC11.05 :</strong> Identifier les dysfonctionnements du réseau local</li>
+                        <li><strong>AC12.04 :</strong> Mettre en service un système de ToIP</li>
+                        <li><strong>AC12.05 :</strong> Communiquer efficacement avec les tiers</li>
+                        <li><strong>AC22.02 :</strong> Déployer un accès distant sécurisé</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-block">
+                    <h3>Autoévaluation</h3>
+                    <div class="auto-eval">
+                        <p><strong>RT1 - Administration :</strong> Maîtrisé</p>
+                        <p class="eval-detail">Configuration autonome des équipements, diagnostic efficace des pannes</p>
+                        
+                        <p><strong>RT2 - Connectivité :</strong> Maîtrisé</p>
+                        <p class="eval-detail">Installation ToIP complète, gestion du secours 4G/5G</p>
+                        
+                        <p><strong>Points forts :</strong> Résolution d'incidents complexes, communication client</p>
+                        <p><strong>À améliorer :</strong> Anticipation des délais, documentation systématique</p>
+                    </div>
+                </div>
             </aside>
         </div>
     </main>
