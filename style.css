@@ -582,7 +582,7 @@ h3 { color: var(--orange-main); }
     display: grid; 
     grid-template-columns: 2fr 1fr; 
     gap: 30px; 
-    align-items: center; /* Centre verticalement le texte par rapport à l'image */
+    align-items: center;
 }
 
 .img-container-center { text-align: center; margin-top: 20px; }
@@ -627,7 +627,34 @@ h3 { color: var(--orange-main); }
 .portfolio-footer span { color: var(--orange-main); font-weight: bold; }
 
 /* --- 8. CONFIGURATION MOBILE (TÉLÉPHONE & TABLETTE) --- */
+
+/* Tablettes (768px - 1024px) */
+@media (max-width: 1024px) {
+    /* Réduction des marges pour tablettes */
+    .timeline-content {
+        padding: 20px;
+    }
+    
+    .equipment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .test-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Images techniques adaptées */
+    .tech-img {
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+        margin: 15px auto;
+    }
+}
+
+/* Smartphones et petites tablettes (max-width: 768px) */
 @media (max-width: 768px) {
+    /* Header responsive */
     .header-left { flex-direction: column; gap: 10px; width: 20%; align-items: center; }
     .header-left img { height: 30px; }
     .header-center { width: 60%; }
@@ -635,8 +662,20 @@ h3 { color: var(--orange-main); }
     .header-right { width: 20%; }
     .header-right img { height: 35px; }
 
+    /* Navigation responsive */
     .nav-menu ul { flex-direction: row; justify-content: space-around; gap: 5px; padding: 15px 5px; }
     .nav-menu a { font-size: 0.7em; }
+
+    /* Container principal */
+    .container {
+        padding: 0 10px;
+        margin: 10px auto;
+    }
+    
+    section {
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
 
     /* Centrage et alignement des blocs techniques sur mobile */
     .index-grid, .mission-details-grid, .mission-grid { 
@@ -652,54 +691,346 @@ h3 { color: var(--orange-main); }
     }
 
     .mission-card { width: 90%; height: 100px; }
-    .container { margin: 15px auto; }
     .footer-top { flex-direction: column; gap: 5px; }
     .footer-sep { display: none; }
 
     /* --- RESPONSIVE PAGES MISSION --- */
+    
+    /* Grille mission en colonne unique */
     .mission-layout-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .mission-sidebar {
-        position: static;
-    }
-
-    .tech-img {
-        width: 100%;
-        height: auto;
-        max-width: 380px;
-    }
-
-    /* Timeline responsive */
-    .timeline-step {
-        grid-template-columns: 40px 1fr;
         gap: 15px;
     }
-
-    .timeline-number {
-        width: 40px;
-        height: 40px;
-        font-size: 1.2em;
+    
+    /* Sidebar repositionnée */
+    .mission-sidebar {
+        position: static;
+        order: 2;
     }
-
+    
+    /* Timeline responsive */
+    .timeline-step {
+        grid-template-columns: 35px 1fr;
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+    
+    .timeline-number {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1em;
+    }
+    
+    .timeline-line,
+    .timeline-line-end {
+        width: 2px;
+        margin-top: 8px;
+    }
+    
     .timeline-content {
         padding: 15px;
     }
-
+    
     .timeline-header {
         flex-direction: column;
         align-items: flex-start;
+        gap: 8px;
     }
-
-    .equipment-grid, .test-grid, .difficulty-grid, .reflexive-grid {
+    
+    .timeline-header h4 {
+        font-size: 1.1em;
+        margin: 0;
+    }
+    
+    .timeline-badge {
+        padding: 4px 12px;
+        font-size: 0.8em;
+        align-self: flex-start;
+    }
+    
+    /* Images timeline */
+    .timeline-image {
+        margin-top: 15px;
+    }
+    
+    .tech-img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .image-caption {
+        font-size: 0.85em;
+        margin-top: 8px;
+    }
+    
+    /* Grilles en une colonne sur mobile */
+    .equipment-grid,
+    .test-grid,
+    .difficulty-grid,
+    .reflexive-grid {
         grid-template-columns: 1fr;
+        gap: 12px;
+        margin: 15px 0;
     }
-
+    
+    .equipment-item,
+    .test-item,
+    .difficulty-item,
+    .reflexive-item {
+        padding: 12px;
+    }
+    
+    /* Process steps verticaux */
+    .process-steps {
+        margin: 15px 0;
+    }
+    
     .process-step {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .step-number {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9em;
+        flex-shrink: 0;
+    }
+    
+    .step-content {
+        flex: 1;
+    }
+    
+    .step-content strong {
+        font-size: 0.95em;
+    }
+    
+    .step-content p {
+        font-size: 0.85em;
+    }
+    
+    /* Task items */
+    .timeline-tasks {
+        margin: 15px 0;
+    }
+    
+    .task-item {
+        padding: 10px 12px;
+        margin-bottom: 8px;
+    }
+    
+    .task-item strong {
+        font-size: 0.9em;
+    }
+    
+    .task-item p {
+        font-size: 0.85em;
+    }
+    
+    /* Alert et Result boxes */
+    .alert-box,
+    .result-box {
+        padding: 12px;
+        margin: 15px 0;
+    }
+    
+    .alert-box strong,
+    .result-box strong {
+        font-size: 0.9em;
+    }
+    
+    /* Difficulty items */
+    .difficulty-title {
+        font-size: 1em;
+        margin-bottom: 8px;
+    }
+    
+    .difficulty-item p {
+        font-size: 0.85em;
+        margin: 6px 0;
+    }
+    
+    /* Reflexive items */
+    .reflexive-item h4 {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    
+    .reflexive-item ul {
+        padding-left: 18px;
+    }
+    
+    .reflexive-item li {
+        font-size: 0.85em;
+        margin: 6px 0;
+    }
+    
+    /* Improvement box */
+    .improvement-box {
+        padding: 15px;
+        margin: 15px 0;
+    }
+    
+    .improvement-box h4 {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    
+    .improvement-box ul {
+        padding-left: 18px;
+    }
+    
+    .improvement-box li {
+        font-size: 0.85em;
+        margin: 6px 0;
+    }
+    
+    /* Trace box */
+    .trace-box {
+        padding: 12px;
+        margin-top: 12px;
+    }
+    
+    .trace-box ul {
+        padding-left: 18px;
+    }
+    
+    .trace-box li {
+        font-size: 0.85em;
+        margin: 6px 0;
+    }
+    
+    /* Sidebar blocks mobile */
+    .sidebar-block {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .sidebar-block h3 {
+        font-size: 1em;
+        margin-bottom: 12px;
+    }
+    
+    .sidebar-block li {
+        padding: 6px 0;
+        font-size: 0.85em;
+    }
+    
+    /* Auto-évaluation mobile */
+    .auto-eval p {
+        font-size: 0.9em;
+        margin: 8px 0 4px 0;
+    }
+    
+    .eval-detail {
+        font-size: 0.8em;
+        margin: 0 0 12px 0;
+    }
+    
+    /* Titres sections */
+    .mission-section h3 {
+        font-size: 1.2em;
+        margin-top: 15px;
+        margin-bottom: 12px;
+    }
+    
+    .mission-section h4 {
+        font-size: 1em;
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+    
+    /* Listes dans sections */
+    .mission-section ul {
+        padding-left: 20px;
+        margin: 8px 0;
+    }
+    
+    .mission-section li {
+        font-size: 0.9em;
+        margin: 6px 0;
+        line-height: 1.5;
+    }
+    
+    /* Paragraphes */
+    .mission-section p {
+        font-size: 0.95em;
+        line-height: 1.6;
+        margin: 10px 0;
+    }
+    
+    /* Header mission */
+    .mission-content h2 {
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
+    
+    .mission-content > p:first-of-type {
+        font-size: 0.9em;
+        margin-bottom: 15px;
+    }
+}
+
+/* Très petits smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Réduction supplémentaire pour petits écrans */
+    .container {
+        padding: 0 8px;
+    }
+    
+    section {
+        padding: 15px 12px;
+    }
+    
+    .timeline-step {
+        grid-template-columns: 30px 1fr;
+        gap: 10px;
+    }
+    
+    .timeline-number {
+        width: 30px;
+        height: 30px;
+        font-size: 1em;
+    }
+    
+    .timeline-content {
+        padding: 12px;
+    }
+    
+    .timeline-header h4 {
+        font-size: 1em;
+    }
+    
+    .timeline-badge {
+        font-size: 0.75em;
+        padding: 3px 10px;
+    }
+    
+    .equipment-item strong,
+    .test-item strong {
+        font-size: 1em;
+    }
+    
+    .step-number {
+        width: 28px;
+        height: 28px;
+        font-size: 0.85em;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+    
+    .mission-section h3 {
+        font-size: 1.1em;
+    }
+    
+    /* Images pleine largeur sur très petits écrans */
+    .tech-img {
+        border-radius: 8px;
     }
 }
