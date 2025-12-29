@@ -8,6 +8,58 @@
     --shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* --- ANIMATIONS GLOBALES --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation au scroll pour tous les éléments */
+section, .skill-card, .experience-container, .education-container, 
+.mission-card, .timeline-step, .equipment-item, .test-item, 
+.difficulty-item, .reflexive-item, .sidebar-block {
+    animation: fadeInUp 0.6s ease-out;
+    animation-fill-mode: both;
+}
+
+/* Délais progressifs pour les éléments multiples */
+.skill-card:nth-child(1) { animation-delay: 0.1s; }
+.skill-card:nth-child(2) { animation-delay: 0.2s; }
+.skill-card:nth-child(3) { animation-delay: 0.3s; }
+
+.mission-card:nth-child(1) { animation-delay: 0.1s; }
+.mission-card:nth-child(2) { animation-delay: 0.2s; }
+.mission-card:nth-child(3) { animation-delay: 0.3s; }
+
+.timeline-step:nth-child(1) { animation-delay: 0.1s; }
+.timeline-step:nth-child(2) { animation-delay: 0.2s; }
+.timeline-step:nth-child(3) { animation-delay: 0.3s; }
+.timeline-step:nth-child(4) { animation-delay: 0.4s; }
+.timeline-step:nth-child(5) { animation-delay: 0.5s; }
+
+/* Transitions douces pour tous les éléments interactifs */
+a, button, .mission-card, .nav-menu a, .date-badge, 
+.equipment-item, .test-item, .sidebar-block, .skill-card,
+.difficulty-item, .reflexive-item, .trace-box, .timeline-content,
+.process-step, .task-item, .tech-img, .timeline-number {
+    transition: all 0.3s ease;
+}
+
 html, body {
     height: 100%; 
     margin: 0; 
@@ -73,6 +125,10 @@ section {
     margin-bottom: 30px; 
 }
 
+section:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
 h2 { border-bottom: 3px solid var(--orange-main); padding-bottom: 10px; margin-top: 0; }
 h3 { color: var(--orange-main); }
 
@@ -88,16 +144,37 @@ h3 { color: var(--orange-main); }
     margin-bottom: 20px; 
 }
 
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 121, 0, 0.2);
+    border-left-width: 8px;
+}
+
 .skill-card h3 { margin: 0 0 10px 0; font-size: 1em; text-transform: uppercase; }
 .skill-card ul { list-style: none; padding: 0; margin: 0; }
 .skill-card li { padding: 5px 0; border-bottom: 1px dashed #eee; font-size: 0.9em; }
 
-.experience-container { border-top: 5px solid var(--orange-main); padding: 25px; border-radius: 15px; }
+.experience-container { 
+    border-top: 5px solid var(--orange-main); 
+    padding: 25px; 
+    border-radius: 15px; 
+}
+
+.experience-container:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: translateY(-3px);
+}
+
 .education-container { 
     border-left: 5px solid var(--dark-grey); 
     padding: 25px; 
     border-radius: 15px; 
     background: #fdfdfd; 
+}
+
+.education-container:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: translateY(-3px);
 }
 
 .experience-item { margin-bottom: 20px; padding-left: 15px; border-left: 2px solid #eee; position: relative; }
@@ -121,6 +198,12 @@ h3 { color: var(--orange-main); }
     text-align: center;
 }
 
+.date-badge:hover {
+    background: var(--orange-main);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 121, 0, 0.3);
+}
+
 /* --- 6. MISSIONS : GRILLE ET DÉTAILS --- */
 .mission-grid { 
     display: flex; 
@@ -142,13 +225,17 @@ h3 { color: var(--orange-main); }
     text-decoration: none; 
     color: var(--black); 
     font-weight: bold;
-    transition: 0.3s; 
     box-shadow: var(--shadow); 
     text-align: center; 
     padding: 15px;
 }
 
-.mission-card:hover { transform: scale(1.05); background-color: #fff9f4; color: var(--orange-main); }
+.mission-card:hover { 
+    transform: scale(1.08) translateY(-5px); 
+    background-color: #fff9f4; 
+    color: var(--orange-main);
+    box-shadow: 0 12px 30px rgba(255, 121, 0, 0.3);
+}
 
 /* --- GRILLE SPÉCIFIQUE PAGE MISSION (2.5fr / 1fr) --- */
 .mission-layout-grid {
@@ -209,6 +296,11 @@ h3 { color: var(--orange-main); }
     box-shadow: var(--shadow);
 }
 
+.sidebar-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
 .sidebar-block h3 {
     margin-top: 0;
     margin-bottom: 15px;
@@ -261,6 +353,11 @@ h3 { color: var(--orange-main); }
     display: block;
 }
 
+.tech-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
 /* --- TIMELINE CHRONOLOGIQUE --- */
 .timeline-step {
     display: grid;
@@ -292,6 +389,11 @@ h3 { color: var(--orange-main); }
     z-index: 2;
 }
 
+.timeline-step:hover .timeline-number {
+    transform: scale(1.15);
+    box-shadow: 0 6px 20px rgba(255, 121, 0, 0.5);
+}
+
 .timeline-line {
     width: 3px;
     flex-grow: 1;
@@ -312,6 +414,12 @@ h3 { color: var(--orange-main); }
     border-radius: 12px;
     box-shadow: var(--shadow);
     border-left: 4px solid var(--orange-main);
+}
+
+.timeline-content:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transform: translateX(5px);
+    border-left-width: 6px;
 }
 
 .timeline-header {
@@ -348,6 +456,12 @@ h3 { color: var(--orange-main); }
     border-radius: 8px;
     margin-bottom: 10px;
     border-left: 3px solid var(--orange-main);
+}
+
+.task-item:hover {
+    background: #f0f0f0;
+    transform: translateX(5px);
+    border-left-width: 5px;
 }
 
 .task-item strong {
@@ -390,6 +504,13 @@ h3 { color: var(--orange-main); }
     text-align: center;
 }
 
+.equipment-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255, 121, 0, 0.2);
+    background: #fff3e6;
+    border-width: 2px;
+}
+
 .equipment-item strong {
     display: block;
     color: var(--orange-main);
@@ -417,6 +538,12 @@ h3 { color: var(--orange-main); }
     border-left: 4px solid #0066cc;
 }
 
+.test-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.15);
+    border-left-width: 6px;
+}
+
 .test-item strong {
     display: block;
     color: #0066cc;
@@ -442,6 +569,12 @@ h3 { color: var(--orange-main); }
     padding: 12px;
     background: #f9f9f9;
     border-radius: 8px;
+}
+
+.process-step:hover {
+    background: #f0f0f0;
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .step-number {
@@ -510,6 +643,12 @@ h3 { color: var(--orange-main); }
     box-shadow: var(--shadow);
 }
 
+.difficulty-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(220, 53, 69, 0.2);
+    border-width: 3px;
+}
+
 .difficulty-title {
     color: #dc3545;
     font-weight: bold;
@@ -535,6 +674,12 @@ h3 { color: var(--orange-main); }
     padding: 20px;
     border-radius: 10px;
     border-left: 4px solid var(--orange-main);
+}
+
+.reflexive-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    border-left-width: 6px;
 }
 
 .reflexive-item h4 {
@@ -608,6 +753,12 @@ h3 { color: var(--orange-main); }
     border-radius: 8px; 
     margin-top: 15px; 
     font-style: italic; 
+}
+
+.trace-box:hover {
+    background: #fff3e6;
+    border-style: solid;
+    box-shadow: 0 4px 12px rgba(255, 121, 0, 0.15);
 }
 
 /* --- IMAGES DANS LA SECTION TRACES --- */
