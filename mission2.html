@@ -75,7 +75,7 @@
                                 </div>
                                 <div class="task-item">
                                     <strong>Repérage du PBO</strong>
-                                    <p>Localisation du Point de Branchement Optique le plus proche du site client</p>
+                                    <p>Localisation du Point de Branchement Optique affecté</p>
                                 </div>
                                 <div class="task-item">
                                     <strong>Tracé du cheminement</strong>
@@ -85,10 +85,6 @@
                                     <strong>Évaluation des contraintes</strong>
                                     <p>Détection des obstacles potentiels nécessitant des travaux préalables</p>
                                 </div>
-                            </div>
-                            <div class="timeline-image">
-                                <img src="epr_sou_photo.png" alt="Intervention EPR SOU - Repérage PBO" class="tech-img">
-                                <p class="image-caption">Repérage du Point de Branchement Optique et analyse du cheminement</p>
                             </div>
                         </div>
                     </div>
@@ -132,7 +128,7 @@
                                 </div>
                             </div>
                             <div class="timeline-image">
-                                <img src="equipements_ftth.png" alt="Matériel de déploiement FTTH" class="tech-img">
+                                <img src="outils.png" alt="Matériel de déploiement FTTH" class="tech-img">
                                 <p class="image-caption">Ensemble du matériel nécessaire au déploiement FTTH</p>
                             </div>
                         </div>
@@ -212,7 +208,7 @@
                                     <div class="step-number">D</div>
                                     <div class="step-content">
                                         <strong>Arc de fusion</strong>
-                                        <p>Soudure à 2000°C après alignement automatique des cœurs</p>
+                                        <p>Soudure après alignement automatique des cœurs</p>
                                     </div>
                                 </div>
                                 <div class="process-step">
@@ -247,15 +243,19 @@
                                 </div>
                                 <div class="task-item">
                                     <strong>Raccordement de la fibre</strong>
-                                    <p>Connexion jarretière optique entre fibre déployée et port SC/APC du PTO</p>
+                                    <p>Soudure de la fibre présente dans le cable avec la fibre présente dans la PTO</p>
                                 </div>
                                 <div class="task-item">
-                                    <strong>Câblage vers le routeur</strong>
-                                    <p>Installation cordon optique entre PTO et module SFP du routeur</p>
+                                    <strong>Raccordement ONT</strong>
+                                    <p>Raccordement de la PTO à l'ONT via une jarrtière optique</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Raccordement routeur</strong>
+                                    <p>Raccordement du routeur à l'ONT avec un cable RJ45</p>
                                 </div>
                                 <div class="task-item">
                                     <strong>Montage en baie</strong>
-                                    <p>Installation du routeur dans la baie informatique avec fixation rack 19 pouces</p>
+                                    <p>Installation du routeur dans la baie informatique avec fixation rack si possible</p>
                                 </div>
                             </div>
                         </div>
@@ -365,7 +365,7 @@
                         <div class="difficulty-item">
                             <div class="difficulty-title">🔧 Configuration AIR bloquée</div>
                             <p><strong>Problème :</strong> Erreur de provisioning routeur</p>
-                            <p><strong>Solution :</strong> Contact support Connect Pro pour resynchronisation</p>
+                            <p><strong>Solution :</strong> Contact support pour resynchronisation</p>
                         </div>
                         <div class="difficulty-item">
                             <div class="difficulty-title">📏 Distance importante</div>
@@ -421,20 +421,45 @@
                 </section>
 
                 <!-- TRACES -->
-                <section class="mission-section">
-                    <h3>Traces et Preuves</h3>
-                    <div class="trace-box">
-                        <p><strong>Documentation technique disponible :</strong></p>
-                        <ul>
-                            <li>Fiches d'intervention EPR SOU avec plan de cheminement annoté</li>
-                            <li>Rapports de soudure avec mesures de réflectométrie (pertes < 0,1 dB)</li>
-                            <li>Photos du matériel utilisé (aiguille, kit fibre, soudeuse, PTO)</li>
-                            <li>Captures d'écran MOBI montrant les interventions validées</li>
-                            <li>Photos avant/après installation (PBO, local technique, routeur en baie)</li>
-                            <li>Bons de travaux signés par les clients</li>
-                        </ul>
-                    </div>
-                </section>
+<section class="mission-section">
+    <h3>Traces et Preuves</h3>
+    <div class="trace-box">
+        <p><strong>Documentation technique disponible :</strong></p>
+        <ul>
+            <li>
+                Fiche d'intervention EPR SOU
+                <div class="trace-image-container">
+                    <img src="eprsou.png" alt="Fiche intervention EPR SOU" class="trace-img">
+                </div>
+            </li>
+            <li>
+                Fiche intervention ASM FHE
+                <div class="trace-image-container">
+                    <img src="asmfhe.png" alt="Fiche intervention ASM FHE" class="trace-img">
+                </div>
+            </li>
+            <li>
+                Raccordement PBO
+                <div class="trace-image-container">
+                    <img src="pb_eprsou.jpg" alt="Raccordement au PBO" class="trace-img">
+                </div>
+            </li>
+            <li>
+                Photos du matériel utilisé (aiguille, kit fibre, soudeuse, PTO)
+                <div class="trace-image-container">
+                    <img src="outils.png" alt="Matériel utilisé" class="trace-img">
+                </div>
+            </li>
+            <li>Captures d'écran MOBI montrant les interventions validées</li>
+            <li>
+                Photos après installation
+                <div class="trace-image-container">
+                    <img src="production_asmfhe.jpg" alt="Photo après installation ASMFHE" class="trace-img">
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
             </article>
 
             <!-- COLONNE DROITE : COMPÉTENCES ET AC -->

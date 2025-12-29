@@ -3,63 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Gabriel MARIE DIT ASSE</title>
+    <title>Bilan des Compétences - Gabriel MARIE DIT ASSE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HEADER : Configuration avec le nouveau sous-titre -->
     <header class="portfolio-header">
         <div class="header-left">
-            <a href="https://www.unicaen.fr/" target="_blank"><img src="unicaen.png" alt="Logo Unicaen"></a>
-            <a href="https://iut-grand-ouest-normandie.unicaen.fr/" target="_blank"><img src="iut.png" alt="Logo IUT"></a>
+            <img src="unicaen.png" alt="Logo Unicaen">
+            <img src="iut.png" alt="Logo IUT">
         </div>
         <div class="header-center">
             <h1><a href="index.html">MARIE DIT ASSE Gabriel</a></h1>
-            <!-- Sous-titre mis à jour ici -->
             <p>2ème année BUT R&T</p>
         </div>
         <div class="header-right">
-            <a href="https://www.orange.fr/" target="_blank"><img src="orange.png" alt="Logo Orange"></a>
+            <img src="orange.png" alt="Logo Orange">
         </div>
     </header>
 
-    <!-- NAVIGATION : Menu sur une seule ligne (Mobile & PC) -->
     <nav class="nav-menu">
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="entreprise.html">Entreprise</a></li>
             <li><a href="missions.html">Missions</a></li>
-            <li><a href="bilans.html">Bilans</a></li>
+            <li><a href="bilan.html">Bilans</a></li>
         </ul>
     </nav>
 
     <main class="container">
-        <section>
-            <h2>Bilan par compétence</h2>
-            <div class="item">
-                <h3>Administrer les réseaux (RT1)</h3>
-                <p>Les missions de déploiement m'ont permis de maîtriser la configuration des services de base des équipements terminaux et la gestion des accès via interface web.</p>
-            </div>
-            <div class="item">
-                <h3>Connecter les entreprises (RT2)</h3>
-                <p>L'installation de solutions professionnelles complexes comme l'offre Connect Pro a renforcé ma capacité à mettre en œuvre des services de ToIP et de secours réseau.</p>
-            </div>
+        <section class="bilan-intro">
+            <h2>Bilan de Compétences & Analyse Réflexive</h2>
+            <p>Synthèse de ma progression en alternance chez Orange : confrontation des savoirs théoriques de l'IUT aux réalités du terrain.</p>
         </section>
+
+        <div class="mission-layout-grid">
+            
+            <article class="mission-content">
+                
+                <section class="mission-section">
+                    <div class="comp-header">
+                        <h3>RT1 - Administrer les réseaux et l'Internet</h3>
+                        <span class="badge">Niveau 2 : Maîtrisé</span>
+                    </div>
+                    <p>Mon expérience sur les offres <strong>Orange Connect Pro</strong> m'a permis de valider ma capacité à administrer des réseaux LAN/WAN en environnement professionnel. Au-delà de la simple configuration, j'ai développé une méthodologie de diagnostic structurée.</p>
+                    <p><em>Analyse :</em> Le passage de la simulation à la production réelle impose une rigueur accrue, notamment sur la gestion du NAT/PAT et la sécurisation des accès distants pour les clients TPE/PME.</p>
+                </section>
+
+                <section class="mission-section">
+                    <div class="comp-header">
+                        <h3>RT2 - Connecter les entreprises et les usagers</h3>
+                        <span class="badge">Niveau 2 : Très Satisfaisant</span>
+                    </div>
+                    <p>Le déploiement <strong>FTTH (EPR SOU et ASM FHE)</strong> a été le vecteur principal de ma montée en compétence sur les supports de transmission. J'ai acquis une expertise technique sur les bilans de liaison optique et les contraintes physiques du raccordement.</p>
+                    <p><em>Analyse :</em> Maîtriser la soudure et la réflectométrie (pertes < 0,1 dB) n'est pas qu'un geste technique, c'est garantir la pérennité du signal opérateur jusqu'au PTO client, respectant les exigences de qualité Orange.</p>
+                </section>
+
+                <section class="mission-section">
+                    <h3>Synthèse et Projection Professionnelle</h3>
+                    <p>Cette année d'alternance a marqué ma transition d'exécutant à technicien autonome. La complémentarité entre les modules de l'IUT et les interventions terrain a facilité ma compréhension des architectures PON.</p>
+                    <p><strong>Objectif :</strong> Consolider mes acquis sur la partie VoIP avancée et l'architecture réseau cœur pour évoluer vers des missions d'expertise technique ou de conduite d'activité.</p>
+                </section>
+            </article>
+
+            <aside class="mission-sidebar">
+                <div class="sidebar-block">
+                    <h3>Compétences Validées (AC)</h3>
+                    <ul class="ac-list">
+                        <li><strong>AC21.01 :</strong> Configurer fonctions avancées</li>
+                        <li><strong>AC21.05 :</strong> Questionner un cahier des charges</li>
+                        <li><strong>AC22.01 :</strong> Déployer systèmes complexes</li>
+                        <li><strong>AC22.03 :</strong> Connexion réseau opérateur</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-block">
+                    <h3>Autoévaluation</h3>
+                    <div class="auto-eval">
+                        <p><strong>Qualité Technique :</strong> 90%</p>
+                        <p class="eval-detail">Rigueur sur les mesures et soudures optiques.</p>
+                        
+                        <p><strong>Adaptabilité :</strong> 85%</p>
+                        <p class="eval-detail">Gestion efficace des imprévus en clientèle.</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
     </main>
 
     <footer class="portfolio-footer">
-    <!-- Première ligne sur PC (devient deux lignes sur mobile) -->
-    <div class="footer-top">
-        <div>2025-2026</div>
-        <div class="footer-sep">|</div>
-        <div><span>Gabriel MARIE DIT ASSE</span></div>
-    </div>
-    
-    <!-- Deuxième ligne sur PC (devient la troisième ligne sur mobile) -->
-    <div class="footer-bottom">
-        BUT Réseaux et Télécommunications
-    </div>
-</footer>   
+        <div class="footer-top">
+            <div>2025-2026</div>
+            <div class="footer-sep">|</div>
+            <div><span>Gabriel MARIE DIT ASSE</span></div>
+        </div>
+        <div class="footer-bottom">BUT Réseaux et Télécommunications</div>
+    </footer>
+
 </body>
 </html>

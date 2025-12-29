@@ -252,8 +252,8 @@ h3 { color: var(--orange-main); }
 
 /* --- IMAGES TECHNIQUES (Format Fixe) --- */
 .tech-img {
-    width: 380px;
-    height: 289px;
+    width: auto;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: var(--shadow);
@@ -610,6 +610,21 @@ h3 { color: var(--orange-main); }
     font-style: italic; 
 }
 
+/* --- IMAGES DANS LA SECTION TRACES --- */
+.trace-image-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.trace-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin: 10px 0;
+}
+
 /* --- 7. FOOTER --- */
 .portfolio-footer {
     background-color: var(--black); 
@@ -902,6 +917,11 @@ h3 { color: var(--orange-main); }
     .trace-box li {
         font-size: 0.85em;
         margin: 6px 0;
+    }
+    
+    /* Images dans section traces - Responsive */
+    .trace-img {
+        max-width: 100%;
     }
     
     /* Sidebar blocks mobile */
