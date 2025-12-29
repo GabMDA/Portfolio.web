@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission 3 - ASM FHE - Gabriel MARIE DIT ASSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="portfolio-header">
+        <div class="header-left">
+            <img src="unicaen.png" alt="Logo Unicaen">
+            <img src="iut.png" alt="Logo IUT">
+        </div>
+        <div class="header-center">
+            <h1><a href="index.html">MARIE DIT ASSE Gabriel</a></h1>
+            <p>2ème année BUT R&T</p>
+        </div>
+        <div class="header-right">
+            <img src="orange.png" alt="Logo Orange">
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="entreprise.html">Entreprise</a></li>
+            <li><a href="missions.html">Missions</a></li>
+            <li><a href="bilans.html">Bilans</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- GRILLE MISSION : 2.5fr (Contenu) / 1fr (Sidebar) -->
+        <div class="mission-layout-grid">
+            
+            <!-- COLONNE GAUCHE : DESCRIPTION TECHNIQUE AVEC TIMELINE -->
+            <article class="mission-content">
+                <h2>Mise en Service FTTH Entreprise - ASM FHE</h2>
+                <p><strong>Rôle :</strong> Technicien d'intervention FTTH (Alternant) | <strong>Lieu :</strong> Secteur de Flers | <strong>Période :</strong> 2024-2025</p>
+
+                <section class="mission-section">
+                    <h3>Contexte et Objectifs</h3>
+                    <p>L'intervention ASM FHE (Accès Service Mise en service - Fibre Haute Entreprise) représente la phase finale de mise en service de l'accès fibre pour les entreprises. Cette mission intervient généralement après le déploiement physique de la fibre (EPR SOU, tirage et soudures), mais il arrive que le technicien ASM FHE réalise également l'ensemble du déploiement physique : tirage de la fibre depuis le PBO, soudures optiques au Point de Branchement Optique, puis installation des équipements terminaux.</p>
+                    <p><strong>Note importante :</strong> Dans certaines interventions ASM FHE, le technicien doit effectuer le travail complet incluant l'EPR SOU (étude préalable), le tirage de la fibre optique dans les fourreaux, les soudures au PBO et côté client, avant de procéder à la mise en service. Cette polyvalence est essentielle pour optimiser les délais et garantir la qualité de bout en bout.</p>
+                    <p>Cette page se concentre sur la phase de mise en service des équipements terminaux (PTO, ONT, routeur) et le provisioning automatique via l'application AIR.</p>
+                    <p><strong>Objectif principal :</strong> Installer et configurer les équipements terminaux, provisionner le routeur via l'application AIR, tester les performances et former le client à l'utilisation de sa nouvelle connexion fibre.</p>
+                </section>
+
+                <!-- TIMELINE CHRONOLOGIQUE -->
+                <section class="mission-section">
+                    <h3>Déroulement de l'Intervention ASM FHE</h3>
+                    
+                    <!-- ÉTAPE 1 -->
+                    <div class="timeline-step">
+                        <div class="timeline-marker">
+                            <div class="timeline-number">1</div>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>Installation du PTO et Raccordement Optique</h4>
+                                <span class="timeline-badge">Installation physique</span>
+                            </div>
+                            <p>Après que la fibre ait été tirée et soudée (phase précédente), j'installe le Point de Terminaison Optique et réalise les raccordements finaux.</p>
+                            <div class="timeline-tasks">
+                                <div class="task-item">
+                                    <strong>Fixation du PTO</strong>
+                                    <p>Installation du boîtier de terminaison optique au mur du local technique</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Raccordement fibre PTO</strong>
+                                    <p>Connexion de la fibre déployée dans le PTO</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Raccordement ONT</strong>
+                                    <p>Raccordement du PTO à l'ONT via une jarretière optique</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Vérification signal</strong>
+                                    <p>Contrôle de la présence du signal optique sur l'ONT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ÉTAPE 2 -->
+                    <div class="timeline-step">
+                        <div class="timeline-marker">
+                            <div class="timeline-number">2</div>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>Installation et Raccordement du Routeur</h4>
+                                <span class="timeline-badge">Équipements actifs</span>
+                            </div>
+                            <div class="timeline-tasks">
+                                <div class="task-item">
+                                    <strong>Montage en baie</strong>
+                                    <p>Installation du routeur dans la baie informatique avec fixation rack si disponible</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Raccordement routeur</strong>
+                                    <p>Connexion du routeur à l'ONT avec un câble RJ45</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Alimentation électrique</strong>
+                                    <p>Branchement des alimentations pour ONT et routeur</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Raccordements réseau local</strong>
+                                    <p>Connexion du routeur au switch ou aux équipements réseau existants</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ÉTAPE 3 -->
+                    <div class="timeline-step">
+                        <div class="timeline-marker">
+                            <div class="timeline-number">3</div>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>Configuration et Provisioning Automatique</h4>
+                                <span class="timeline-badge">Mise en service</span>
+                            </div>
+                            <p>Utilisation de l'application AIR pour configurer automatiquement le routeur avec les paramètres Orange entreprise.</p>
+                            <div class="timeline-tasks">
+                                <div class="task-item">
+                                    <strong>Lancement application AIR</strong>
+                                    <p>Connexion à l'outil de provisioning automatique Orange sur tablette terrain</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Scan QR code routeur</strong>
+                                    <p>Identification automatique du routeur et récupération de sa configuration</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Téléchargement configuration</strong>
+                                    <p>Récupération des paramètres depuis les serveurs Orange (VLAN, QoS, sécurité)</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Injection dans le routeur</strong>
+                                    <p>Transfert automatique de la configuration complète vers l'équipement</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Synchronisation PON</strong>
+                                    <p>Vérification de l'établissement de la liaison optique (état "O5" sur ONT)</p>
+                                </div>
+                            </div>
+                            <div class="timeline-image">
+                                <img src="asm_fhe_photo.png" alt="Configuration AIR du routeur" class="tech-img">
+                                <p class="image-caption">Interface de l'application AIR pour le provisioning automatique</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ÉTAPE 4 -->
+                    <div class="timeline-step">
+                        <div class="timeline-marker">
+                            <div class="timeline-number">4</div>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>Tests Fonctionnels et Validation des Performances</h4>
+                                <span class="timeline-badge">Recette technique</span>
+                            </div>
+                            <p>Réalisation d'une batterie de tests pour valider le bon fonctionnement de l'accès fibre et la conformité aux performances contractuelles.</p>
+                            <div class="test-grid">
+                                <div class="test-item">
+                                    <strong>📞 Téléphonie</strong>
+                                    <p>Appels entrants/sortants si ToIP incluse dans l'offre</p>
+                                </div>
+                                <div class="test-item">
+                                    <strong>🌐 Connectivité Internet</strong>
+                                    <p>Navigation web et accès aux services en ligne</p>
+                                </div>
+                                <div class="test-item">
+                                    <strong>🖨️ Réseau local</strong>
+                                    <p>Distribution DHCP et accès aux ressources (imprimantes, serveurs)</p>
+                                </div>
+                                <div class="test-item">
+                                    <strong>⚡ Mesure de débit</strong>
+                                    <p>Speedtest pour vérifier les performances contractuelles</p>
+                                </div>
+                            </div>
+                            <div class="timeline-tasks">
+                                <div class="task-item">
+                                    <strong>Test de latence</strong>
+                                    <p>Vérification des temps de réponse (ping) vers les serveurs Orange</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Test VPN si applicable</strong>
+                                    <p>Validation du tunnel VPN pour interconnexion de sites</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Vérification QoS</strong>
+                                    <p>Contrôle de la priorisation du trafic voix/données</p>
+                                </div>
+                            </div>
+                            <div class="result-box">
+                                <strong>✅ Résultat obtenu :</strong> Performances conformes au contrat, tous les services opérationnels, liaison optique stable.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ÉTAPE 5 -->
+                    <div class="timeline-step">
+                        <div class="timeline-marker">
+                            <div class="timeline-number">5</div>
+                            <div class="timeline-line-end"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>Formation Client et Clôture Administrative</h4>
+                                <span class="timeline-badge">Livraison</span>
+                            </div>
+                            <div class="timeline-tasks">
+                                <div class="task-item">
+                                    <strong>Présentation de l'installation</strong>
+                                    <p>Explication de l'architecture installée (PTO, ONT, routeur)</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Formation aux équipements</strong>
+                                    <p>Démonstration de l'interface d'administration du routeur</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Remise de documentation</strong>
+                                    <p>Communication des identifiants Wi-Fi, accès administration, contacts support</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Signature du bon d'intervention</strong>
+                                    <p>Validation de la conformité de l'installation par le client</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Clôture dans MOBI</strong>
+                                    <p>Finalisation administrative de l'intervention dans l'application terrain</p>
+                                </div>
+                                <div class="task-item">
+                                    <strong>Nettoyage du site</strong>
+                                    <p>Récupération des emballages, déchets et remise en état des lieux</p>
+                                </div>
+                            </div>
+                            <div class="timeline-image">
+                                <img src="mobi_asm_fhe.png" alt="Validation MOBI ASM FHE" class="tech-img">
+                                <p class="image-caption">Validation finale de l'intervention dans l'application MOBI</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- DIFFICULTÉS -->
+                <section class="mission-section">
+                    <h3>Difficultés Rencontrées et Solutions Apportées</h3>
+                    <div class="difficulty-grid">
+                        <div class="difficulty-item">
+                            <div class="difficulty-title">🔧 Échec provisioning AIR</div>
+                            <p><strong>Problème :</strong> Erreur lors du téléchargement de la configuration</p>
+                            <p><strong>Solution :</strong> Contact du support technique Orange pour resynchronisation manuelle</p>
+                        </div>
+                        <div class="difficulty-item">
+                            <div class="difficulty-title">📡 Signal PON absent</div>
+                            <p><strong>Problème :</strong> ONT ne détecte pas le signal optique</p>
+                            <p><strong>Solution :</strong> Vérification des jarretières et nettoyage des connecteurs optiques</p>
+                        </div>
+                        <div class="difficulty-item">
+                            <div class="difficulty-title">⚡ Performances dégradées</div>
+                            <p><strong>Problème :</strong> Débit mesuré inférieur au contractuel</p>
+                            <p><strong>Solution :</strong> Diagnostic réseau client (équipement défaillant identifié)</p>
+                        </div>
+                        <div class="difficulty-item">
+                            <div class="difficulty-title">🖧 Conflit d'adressage IP</div>
+                            <p><strong>Problème :</strong> Incompatibilité avec l'ancien réseau client</p>
+                            <p><strong>Solution :</strong> Reconfiguration du plan d'adressage en coordination avec le client</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ANALYSE RÉFLEXIVE -->
+                <section class="mission-section">
+                    <h3>Analyse Réflexive</h3>
+                    <p>Cette mission de mise en service FTTH entreprise (ASM FHE) m'a permis de développer une <strong>expertise technique sur les équipements actifs</strong> et les protocoles de configuration automatique. J'ai acquis une maîtrise complète du provisioning via l'application AIR et des procédures de validation des installations professionnelles.</p>
+                    
+                    <div class="reflexive-grid">
+                        <div class="reflexive-item">
+                            <h4>🔬 Sur le plan technique</h4>
+                            <ul>
+                                <li>Maîtrise du provisioning automatique via AIR</li>
+                                <li>Compréhension des architectures PON et protocoles GPON</li>
+                                <li>Diagnostic réseau et tests de performance</li>
+                                <li>Configuration de routeurs professionnels</li>
+                            </ul>
+                        </div>
+                        <div class="reflexive-item">
+                            <h4>📋 Sur le plan organisationnel</h4>
+                            <ul>
+                                <li>Rigueur dans les tests et la validation</li>
+                                <li>Méthodologie de dépannage structurée</li>
+                                <li>Autonomie dans la résolution d'incidents</li>
+                                <li>Gestion efficace du temps d'intervention</li>
+                            </ul>
+                        </div>
+                        <div class="reflexive-item">
+                            <h4>🤝 Sur le plan relationnel</h4>
+                            <ul>
+                                <li>Pédagogie dans la formation client aux équipements</li>
+                                <li>Communication claire sur les performances attendues</li>
+                                <li>Gestion des réclamations et insatisfactions</li>
+                                <li>Coordination avec support technique distant</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="improvement-box">
+                        <h4>📈 Points d'amélioration identifiés</h4>
+                        <ul>
+                            <li>Approfondir mes connaissances sur la configuration avancée des routeurs (VPN, QoS complexe)</li>
+                            <li>Développer mes compétences en diagnostic de performance réseau</li>
+                            <li>Renforcer ma compréhension des architectures PON de nouvelle génération (XGS-PON, 10G-EPON)</li>
+                            <li>Améliorer ma capacité à former les clients sur des sujets techniques complexes</li>
+                        </ul>
+                    </div>
+
+                    <p>Cette expérience confirme mon intérêt pour les métiers de technicien réseau et télécommunications, avec une orientation possible vers les fonctions de <strong>technicien support niveau 2</strong>, <strong>responsable d'exploitation fibre</strong> ou d'<strong>expert systèmes de transmission</strong>.</p>
+                </section>
+
+                <!-- TRACES -->
+                <section class="mission-section">
+                    <h3>Traces et Preuves</h3>
+                    <div class="trace-box">
+                        <p><strong>Documentation technique disponible :</strong></p>
+                        <ul>
+                            <li>
+                                Fiche intervention ASM FHE complète avec signature client
+                                <div class="trace-image-container">
+                                    <img src="asmfhe.png" alt="Fiche intervention ASM FHE" class="trace-img">
+                                </div>
+                            </li>
+                            <li>
+                                Photos après installation complète (PTO, ONT, routeur en baie)
+                                <div class="trace-image-container">
+                                    <img src="production_asmfhe.jpg" alt="Photo après installation ASM FHE" class="trace-img">
+                                </div>
+                            </li>
+                            <li>Captures d'écran MOBI montrant la validation finale de l'intervention</li>
+                            <li>Captures d'écran de l'application AIR montrant le provisioning réussi</li>
+                            <li>Rapports de tests de débit et de latence</li>
+                            <li>Photos des équipements installés et de leur intégration en baie</li>
+                            <li>Documentation remise au client (identifiants, procédures, contacts)</li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+
+            <!-- COLONNE DROITE : COMPÉTENCES ET AC -->
+            <aside class="mission-sidebar">
+                <div class="sidebar-block">
+                    <h3>Compétences BUT R&T</h3>
+                    <ul>
+                        <li><strong>RT1 :</strong> Administrer les réseaux et l'internet</li>
+                        <li><strong>RT2 :</strong> Connecter les entreprises et les usagers</li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-block">
+                    <h3>Apprentissages Critiques</h3>
+                    <ul>
+                        <li><strong>AC11.05 :</strong> Identifier les dysfonctionnements du réseau local</li>
+                        <li><strong>AC12.01 :</strong> Mesurer et analyser les signaux</li>
+                        <li><strong>AC12.04 :</strong> Mettre en service un système de ToIP</li>
+                        <li><strong>AC12.05 :</strong> Communiquer avec un tiers</li>
+                        <li><strong>AC21.03 :</strong> Déployer des postes clients</li>
+                        <li><strong>AC21.04 :</strong> Déployer des services réseaux avancés</li>
+                        <li><strong>AC22.01 :</strong> Déployer des systèmes de transmission complexes</li>
+                        <li><strong>AC22.03 :</strong> Mettre en place une connexion via réseau opérateur</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-block">
+                    <h3>Autoévaluation</h3>
+                    <div class="auto-eval">
+                        <p><strong>RT1 - Administration :</strong> Maîtrisé</p>
+                        <p class="eval-detail">Configuration routeur via AIR, diagnostic réseau et tests de performance avancés</p>
+                        
+                        <p><strong>RT2 - Connecter :</strong> Maîtrisé</p>
+                        <p class="eval-detail">Installation complète équipements terminaux, mise en service professionnelle</p>
+                        
+                        <p><strong>Points forts :</strong> Provisioning automatique, tests et validation, formation client, diagnostic réseau</p>
+                        <p><strong>À améliorer :</strong> Configuration routeur avancée, connaissances PON 10G, dépannage niveau 2</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="portfolio-footer">
+        <div class="footer-top">
+            <div>2025-2026</div>
+            <div class="footer-sep">|</div>
+            <div><span>MARIE DIT ASSE Gabriel</span></div>
+        </div>
+        <div class="footer-bottom">BUT Réseaux et Télécommunications</div>
+    </footer>
+
+</body>
+</html>
