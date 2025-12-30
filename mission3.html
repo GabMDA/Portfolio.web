@@ -408,6 +408,32 @@
         </div>
         <div class="footer-bottom">BUT Réseaux et Télécommunications</div>
     </footer>
+<!-- Bouton retour en haut -->
+<button id="scrollTopBtn" aria-label="Retour en haut">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 4l-8 8h5v8h6v-8h5z"/>
+    </svg>
+</button>
 
+<script>
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    
+    // Afficher/masquer le bouton en fonction du scroll
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            scrollTopBtn.classList.add('show');
+        } else {
+            scrollTopBtn.classList.remove('show');
+        }
+    });
+    
+    // Remonter en haut au clic
+    scrollTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
 </body>
 </html>

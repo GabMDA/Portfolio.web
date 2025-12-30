@@ -68,6 +68,42 @@ html, body {
     flex-direction: column; 
     background-color: var(--light-bg); 
     color: var(--black);
+    scroll-behavior: smooth;
+}
+
+/* --- BOUTON RETOUR EN HAUT --- */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--orange-main);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#scrollTopBtn:hover {
+    background-color: var(--dark-grey);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+#scrollTopBtn.show {
+    display: flex;
+}
+
+#scrollTopBtn svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--white);
 }
 
 /* --- 2. HEADER (Version PC) --- */
@@ -829,6 +865,14 @@ section img:hover,
         max-width: 500px;
         margin: 15px auto;
     }
+    
+    /* Bouton retour en haut ajusté pour tablette */
+    #scrollTopBtn {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
 }
 
 /* Smartphones et petites tablettes (max-width: 768px) */
@@ -1157,6 +1201,19 @@ section img:hover,
         font-size: 0.9em;
         margin-bottom: 15px;
     }
+    
+    /* Bouton retour en haut sur mobile */
+    #scrollTopBtn {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    #scrollTopBtn svg {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 /* Très petits smartphones (max-width: 480px) */
@@ -1216,5 +1273,18 @@ section img:hover,
     /* Images pleine largeur sur très petits écrans */
     .tech-img {
         border-radius: 8px;
+    }
+    
+    /* Bouton retour en haut encore plus petit */
+    #scrollTopBtn {
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    #scrollTopBtn svg {
+        width: 18px;
+        height: 18px;
     }
 }
