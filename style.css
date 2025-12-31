@@ -1288,3 +1288,365 @@ section img:hover,
         height: 18px;
     }
 }
+
+/* --- STYLES SPÉCIFIQUES PAGE À PROPOS --- */
+
+.apropos-intro {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.apropos-grid {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.apropos-content {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+/* Technologies Stack */
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.tech-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid var(--orange-main);
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    border-left-width: 6px;
+}
+
+.tech-item strong {
+    display: block;
+    color: var(--orange-main);
+    font-size: 1.3em;
+    margin-bottom: 8px;
+}
+
+.tech-item p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Validation Boxes */
+.validation-box {
+    background: #f0f8ff;
+    border: 2px solid #0066cc;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px 0;
+    transition: all 0.3s ease;
+}
+
+.validation-box:hover {
+    box-shadow: 0 8px 20px rgba(0, 102, 204, 0.15);
+    transform: translateY(-3px);
+}
+
+.validation-box h4 {
+    color: #0066cc;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.validation-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--white);
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    margin: 15px 0;
+    border: 2px solid #0066cc;
+    transition: all 0.3s ease;
+}
+
+.validation-link:hover {
+    background: #0066cc;
+    color: var(--white);
+    transform: translateX(5px);
+}
+
+.w3c-badge {
+    height: 40px;
+    width: auto;
+}
+
+.validation-note {
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.validation-note a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.standards-benefits {
+    background: #fff9f4;
+    border-left: 4px solid var(--orange-main);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.standards-benefits h4 {
+    color: var(--orange-main);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.standards-benefits ul {
+    margin: 0;
+    padding-left: 25px;
+}
+
+.standards-benefits li {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.standards-benefits strong {
+    color: var(--dark-grey);
+}
+
+/* Responsive Grid */
+.responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.responsive-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid var(--orange-main);
+    transition: all 0.3s ease;
+}
+
+.responsive-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 121, 0, 0.2);
+    background: #fff9f4;
+}
+
+.responsive-item strong {
+    display: block;
+    color: var(--orange-main);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.responsive-item p {
+    margin: 0;
+    font-size: 0.85em;
+    color: #666;
+}
+
+/* Features List */
+.features-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.feature-item {
+    background: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 3px solid var(--orange-main);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-left-width: 5px;
+}
+
+.feature-item strong {
+    display: block;
+    color: var(--orange-main);
+    margin-bottom: 5px;
+    font-size: 1.05em;
+}
+
+.feature-item p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.feature-item code {
+    background: #e9ecef;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.85em;
+    color: var(--dark-grey);
+}
+
+/* Credits Box */
+.credits-box {
+    background: linear-gradient(135deg, #fff9f4 0%, #f8f9fa 100%);
+    border: 2px solid var(--orange-main);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+}
+
+.credits-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--orange-main);
+    margin: 15px 0;
+}
+
+.credits-year {
+    margin: 20px 0;
+    padding: 15px;
+    background: var(--white);
+    border-radius: 8px;
+}
+
+.credits-purpose {
+    margin-top: 20px;
+    font-style: italic;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* --- RESPONSIVE POUR PAGE À PROPOS --- */
+
+@media (max-width: 1024px) {
+    .tech-stack {
+        grid-template-columns: 1fr;
+    }
+    
+    .responsive-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .apropos-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .apropos-content {
+        padding: 20px 15px;
+    }
+    
+    .tech-stack {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .tech-item {
+        padding: 15px;
+    }
+    
+    .validation-box {
+        padding: 20px 15px;
+    }
+    
+    .validation-link {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .w3c-badge {
+        height: 35px;
+    }
+    
+    .responsive-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .responsive-item {
+        padding: 15px;
+    }
+    
+    .feature-item {
+        padding: 12px 15px;
+    }
+    
+    .credits-box {
+        padding: 20px 15px;
+    }
+    
+    .credits-name {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .apropos-content {
+        padding: 15px 12px;
+    }
+    
+    .tech-item strong {
+        font-size: 1.1em;
+    }
+    
+    .validation-box h4 {
+        font-size: 1.1em;
+    }
+    
+    .credits-name {
+        font-size: 1.2em;
+    }
+}
+
+/* --- STYLES SPÉCIFIQUES SIDEBAR PAGE À PROPOS --- */
+
+/* Liens blancs dans la sidebar de la page À propos */
+.apropos-grid .sidebar-block ul li a {
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.apropos-grid .sidebar-block ul li a:hover {
+    color: var(--orange-main);
+    text-decoration: none;
+}
+
+/* Assurer que les liens externes ont aussi le bon style */
+.apropos-grid .sidebar-block a {
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.apropos-grid .sidebar-block a:hover {
+    color: var(--orange-main);
+}
