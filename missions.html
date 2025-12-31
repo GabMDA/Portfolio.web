@@ -25,14 +25,16 @@
     </header>
 
     <!-- NAVIGATION : Menu sur une seule ligne (Mobile & PC) -->
-    <nav class="nav-menu">
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="entreprise.html">Entreprise</a></li>
-            <li><a href="missions.html">Missions</a></li>
-            <li><a href="bilans.html">Bilans</a></li>
-        </ul>
-    </nav>
+    <!-- NAVIGATION -->
+<nav class="nav-menu">
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="entreprise.html">Entreprise</a></li>
+        <li><a href="missions.html">Missions</a></li>
+        <li><a href="bilans.html">Bilans</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+    </ul>
+</nav>
 
     <main class="container">
         <h2>Mes Missions en Entreprise</h2>
@@ -63,25 +65,8 @@
     </svg>
 </button>
 
-<script>
-    const scrollTopBtn = document.getElementById('scrollTopBtn');
-    
-    // Afficher/masquer le bouton en fonction du scroll
-    window.addEventListener('scroll', function() {
-        if (window.pageYOffset > 300) {
-            scrollTopBtn.classList.add('show');
-        } else {
-            scrollTopBtn.classList.remove('show');
-        }
-    });
-    
-    // Remonter en haut au clic
-    scrollTopBtn.addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-</script>
+<script src="script.js"></script>
+</body>
+</html>
 </body>
 </html>

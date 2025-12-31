@@ -35,7 +35,7 @@
     </nav>
 
     <main class="container">
-        <section class="apropos-intro">
+        <section class="apropos-intro" id="intro">
             <h2>À propos du site web</h2>
             <p>Informations techniques et crédits relatifs à ce portfolio en ligne.</p>
         </section>
@@ -46,7 +46,7 @@
             <article class="apropos-content">
                 
                 <!-- Technologies utilisées -->
-                <section class="mission-section">
+                <section class="mission-section" id="tech">
                     <h3>🛠️ Technologies utilisées</h3>
                     <p>Ce site web est entièrement développé avec des technologies web standards :</p>
                     <div class="tech-stack">
@@ -63,7 +63,7 @@
                 </section>
 
                 <!-- Conformité Standards Web -->
-                <section class="mission-section">
+                <section class="mission-section" id="w3c">
                     <h3>✅ Conformité aux standards du W3C</h3>
                     <p>Ce site respecte les normes et recommandations du <strong>World Wide Web Consortium (W3C)</strong>, l'organisme international de standardisation du web.</p>
                     
@@ -100,7 +100,7 @@
                 </section>
 
                 <!-- Design Responsive -->
-                <section class="mission-section">
+                <section class="mission-section" id="responsive">
                     <h3>📱 Design Responsive</h3>
                     <p>Le site est entièrement responsive et s'adapte automatiquement à tous les types d'appareils :</p>
                     <div class="responsive-grid">
@@ -121,7 +121,7 @@
                 </section>
 
                 <!-- Caractéristiques techniques -->
-                <section class="mission-section">
+                <section class="mission-section" id="features">
                     <h3>⚙️ Caractéristiques techniques</h3>
                     <div class="features-list">
                         <div class="feature-item">
@@ -152,7 +152,7 @@
                 </section>
 
                 <!-- Crédits -->
-                <section class="mission-section">
+                <section class="mission-section" id="credits">
                     <h3>👤 Crédits</h3>
                     <div class="credits-box">
                         <p><strong>Conception et développement :</strong></p>
@@ -171,7 +171,7 @@
 
                 <!-- Contact et informations -->
                <!-- Contact et informations -->
-                <section class="mission-section">
+                <section class="mission-section" id="contacts">
                     <h3>📞 Contacts</h3>
                     <p>Ce site constitue un portfolio professionnel présentant mes activités d'alternance chez Orange et mes compétences acquises durant ma formation BUT Réseaux et Télécommunications.</p>
                     <p>Pour toute question concernant ce portfolio ou mes compétences, n'hésitez pas à me contacter :</p>
@@ -210,14 +210,13 @@
                 <div class="sidebar-block">
                     <h3>Navigation rapide</h3>
                     <ul>
-                        <li><a href="#" onclick="document.querySelector('.apropos-intro').scrollIntoView({behavior: 'smooth'}); return false;">Introduction</a></li>
-                        <li><a href="#" onclick="document.querySelectorAll('.mission-section')[0].scrollIntoView({behavior: 'smooth'}); return false;">Technologies</a></li>
-                        <li><a href="#" onclick="document.querySelectorAll('.mission-section')[1].scrollIntoView({behavior: 'smooth'}); return false;">Conformité W3C</a></li>
-                        <li><a href="#" onclick="document.querySelectorAll('.mission-section')[2].scrollIntoView({behavior: 'smooth'}); return false;">Design Responsive</a></li>
-                        <li><a href="#" onclick="document.querySelectorAll('.mission-section')[3].scrollIntoView({behavior: 'smooth'}); return false;">Caractéristiques</a></li>
-                        <li><a href="#" onclick="document.querySelectorAll('.mission-section')[4].scrollIntoView({behavior: 'smooth'}); return false;">Crédits</a></li>
-                        <li><a href="#" onclick="document.querySelectorAll('.mission-section')[5].scrollIntoView({behavior: 'smooth'}); return false;">Contacts</a></li>
-
+                       <li><a href="#intro">Introduction</a></li>
+                        <li><a href="#tech">Technologies</a></li>
+                        <li><a href="#w3c">Conformité W3C</a></li>
+                        <li><a href="#responsive">Design Responsive</a></li>
+                        <li><a href="#features">Caractéristiques</a></li>
+                        <li><a href="#credits">Crédits</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
                     </ul>
                 </div>
 
@@ -255,23 +254,8 @@
         </svg>
     </button>
 
-    <script>
-        const scrollTopBtn = document.getElementById('scrollTopBtn');
-        
-        window.addEventListener('scroll', function() {
-            if (window.pageYOffset > 300) {
-                scrollTopBtn.classList.add('show');
-            } else {
-                scrollTopBtn.classList.remove('show');
-            }
-        });
-        
-        scrollTopBtn.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
+<script src="script.js"></script>
+</body>
+</html>
 </body>
 </html>

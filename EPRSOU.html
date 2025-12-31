@@ -381,25 +381,8 @@
     </svg>
 </button>
 
-<script>
-    const scrollTopBtn = document.getElementById('scrollTopBtn');
-    
-    // Afficher/masquer le bouton en fonction du scroll
-    window.addEventListener('scroll', function() {
-        if (window.pageYOffset > 300) {
-            scrollTopBtn.classList.add('show');
-        } else {
-            scrollTopBtn.classList.remove('show');
-        }
-    });
-    
-    // Remonter en haut au clic
-    scrollTopBtn.addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-</script>
+<script src="script.js"></script>
+</body>
+</html>
 </body>
 </html>
