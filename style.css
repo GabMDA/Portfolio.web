@@ -1313,7 +1313,7 @@ section img:hover,
 /* Technologies Stack */
 .tech-stack {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin: 20px 0;
 }
@@ -1546,8 +1546,9 @@ section img:hover,
 
 @media (max-width: 1024px) {
     .tech-stack {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
+}
     
     .responsive-grid {
         grid-template-columns: 1fr;
