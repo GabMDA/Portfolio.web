@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entreprise - Orange - Gabriel MARIE DIT ASSE</title>
+    <title>Alternance - Orange - Gabriel MARIE DIT ASSE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,21 +24,52 @@
     </header>
 
     <!-- NAVIGATION -->
-    <!-- NAVIGATION -->
-<nav class="nav-menu">
-    <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="entreprise.html">Entreprise</a></li>
-        <li><a href="missions.html">Missions</a></li>
-        <li><a href="bilans.html">Bilans</a></li>
-        <li><a href="apropos.html">À propos</a></li>
-    </ul>
-</nav>
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="entreprise.html">Alternance</a></li>
+            <li><a href="missions.html">Missions</a></li>
+            <li><a href="bilans.html">Bilans</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+        </ul>
+    </nav>
 
     <main class="container">
         <h2>Répartition de l'entreprise au niveau national</h2>
 
-        <!-- SECTION 1 : DOGO (Alignement vertical via classe .centered) -->
+        <!-- SECTION 1 : Site de Flers (Image large via classe .large-img) -->
+        <section>
+            <h3>Mon implantation : Le site de Flers</h3>
+            <p>J'exerce mes missions dans l'<strong>Orne</strong>, sur le <strong>site de Flers</strong>. Le site regroupe des métiers interdépendants : Chargés d'Affaires, de Maintenance, et techniciens.</p>
+            <p>Voici la hierachie de mon point de vue de l'entreprise Orange :</p>
+
+            <div class="img-container-center">
+                <img src="hierachie.png" alt="Hiérarchie Orange Flers" class="large-img">
+                <p>Trace 1</p>
+            </div>
+            
+            <p style="margin-top: 25px;">Sur le site, les techniciens se répartissent entre quatre domaines : le <strong>Réseau Structurant (RS)</strong>, la <strong>Boucle Locale (BL)</strong>, le secteur <strong>Entreprise (E)</strong> et le <strong>Grand Public (GP)</strong>.</p>
+            
+            <p>J'ai eu l'opportunité de participer à au moins une intervention dans chacun de ces domaines, ce qui m'a permis de mieux comprendre les missions de mes collègues et d'appréhender la diversité de leurs activités quotidiennes.</p>
+            
+            <p>Aujourd'hui, je concentre mon activité essentiellement sur les interventions <strong>Entreprise</strong> et <strong>Boucle Locale</strong>, deux domaines qui suscitent particulièrement mon intérêt et dans lesquels je m'épanouis pleinement.</p>
+        </section>
+
+        <!-- SECTION 2 : UCI (Alignement vertical via classe .centered) -->
+        <section>
+            <div class="mission-details-grid centered">
+                <div class="img-container-center">
+                    <img src="carte.png" alt="Carte UCI NC" class="large-img">
+                    <p>Trace 2</p>
+                </div>
+                <div>
+                    <h3>L'Unité de Clients et Industrielle (UCI)</h3>
+                    <p>J'évolue au sein de l'<strong>UCI Normandie Centre (UCI NC)</strong>. Cette unité administrative couvre les territoires de la Normandie et du Centre-Val de Loire.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3 : DOGO (Alignement vertical via classe .centered) -->
         <section>
             <div class="mission-details-grid centered">
                 <div>
@@ -48,30 +79,8 @@
                 </div>
                 <div class="img-container-center">
                     <img src="france.png" alt="Carte France Orange" class="large-img">
+                    <p>Trace 3</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- SECTION 2 : UCI (Alignement vertical via classe .centered) -->
-        <section>
-            <div class="mission-details-grid centered">
-                <div class="img-container-center">
-                    <img src="carte.png" alt="Carte UCI NC" class="large-img">
-                </div>
-                <div>
-                    <h3>L'Unité de Clients et Industrielle (UCI)</h3>
-                    <p>J'évolue au sein de l'<strong>UCI Normandie Centre (UCI NC)</strong>. Cette unité administrative couvre les territoires de la Normandie et du Centre-Val de Loire.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 3 : Site de Flers (Image large via classe .large-img) -->
-        <section>
-            <h3>Mon implantation : Le site de Flers</h3>
-            <p>J'exerce mes missions dans l'<strong>Orne</strong>, sur le <strong>site de Flers</strong>. Le site regroupe des métiers interdépendants : Chargés d'Affaires, de Maintenance, et techniciens.</p>
-            
-            <div class="img-container-center">
-                <img src="hierachie.png" alt="Hiérarchie Orange Flers" class="large-img">
             </div>
         </section>
     </main>
@@ -85,15 +94,14 @@
         </div>
         <div class="footer-bottom">BUT Réseaux et Télécommunications</div>
     </footer>
-<!-- Bouton retour en haut -->
-<button id="scrollTopBtn" aria-label="Retour en haut">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M12 4l-8 8h5v8h6v-8h5z"/>
-    </svg>
-</button>
 
-<script src="script.js"></script>
-</body>
-</html>
+    <!-- Bouton retour en haut -->
+    <button id="scrollTopBtn" aria-label="Retour en haut">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 4l-8 8h5v8h6v-8h5z"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
