@@ -1548,21 +1548,28 @@ section img:hover,
     .tech-stack {
         grid-template-columns: repeat(2, 1fr);
     }
-}
     
     .responsive-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
+    /* Grid en colonne unique sur mobile */
     .apropos-grid {
         grid-template-columns: 1fr;
         gap: 15px;
     }
     
+    /* La sidebar passe en dessous sur mobile */
+    .apropos-grid .mission-sidebar {
+        position: static;
+        order: 2;
+    }
+    
     .apropos-content {
         padding: 20px 15px;
+        order: 1;
     }
     
     .tech-stack {
@@ -1607,6 +1614,11 @@ section img:hover,
     
     .credits-name {
         font-size: 1.3em;
+    }
+    
+    /* Sidebar blocks plus visibles sur mobile */
+    .apropos-grid .sidebar-block {
+        margin-bottom: 15px;
     }
 }
 
